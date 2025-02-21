@@ -12,7 +12,7 @@
 </head>
 <body>
 
-	<h1>이름 : ${ selectAllMyInfo.name }, 나이 : ${ selectAllMyInfo.age }세</h1>
+	<h1>이름 : ${ selectAllMyInfo.name } <br> 나이 : ${ selectAllMyInfo.age }세</h1>
 
 </body>
 </html>

@@ -19,8 +19,8 @@ public class MainController {
 
 	@GetMapping("/")
 	public String index(Model model) {
-		MyInfoVo list = service.selectAll();
-		model.addAttribute("selectAllMyInfo", list);
+		MyInfoVo vo = service.selectAll();
+		model.addAttribute("selectAllMyInfo", vo);
 		return "index";
 	}
 	

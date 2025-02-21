@@ -1,0 +1,14 @@
+version: '1'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+  db:
+    image: oracle:21
+    environment:
+      POSTGRES_USER: system
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: xe
+    ports:
+      - "1521:1521"
